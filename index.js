@@ -4,9 +4,6 @@ const Skincaredata = require("./db.json");
 
 const port = process.env.PORT || 3000;
 
-app.get("/", (req, res) => {
-  res.send(`skincare data running `);
-});
 
 app.get("/skindata", (req, res) => {
   res.send(Skincaredata);
